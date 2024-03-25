@@ -116,6 +116,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -327,7 +328,13 @@
 -r:"C:/Program Files/Unity 2022.3.8f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.ConversionSystem.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Updater.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ForUI.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
@@ -352,12 +359,23 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Assets/Input/PlayerInput.cs"
 "Assets/Scripts/BackButton.cs"
-"Assets/Scripts/Enemy.cs"
+"Assets/Scripts/Bullet.cs"
+"Assets/Scripts/Enemy/BaseState.cs"
+"Assets/Scripts/Enemy/Enemy.cs"
+"Assets/Scripts/Enemy/Path.cs"
+"Assets/Scripts/Enemy/PatrolState.cs"
+"Assets/Scripts/Enemy/StateMachine.cs"
 "Assets/Scripts/EnemyController.cs"
+"Assets/Scripts/InputManager.cs"
+"Assets/Scripts/Interactable.cs"
+"Assets/Scripts/Interactables/Cube.cs"
 "Assets/Scripts/MapButton.cs"
-"Assets/Scripts/PlayerController.cs"
-"Assets/Scripts/PlayerMotor.cs"
+"Assets/Scripts/PlayerScripts/PlayerInteract.cs"
+"Assets/Scripts/PlayerScripts/PlayerLook.cs"
+"Assets/Scripts/PlayerScripts/PlayerMotor.cs"
+"Assets/Scripts/PlayerScripts/PlayerUI.cs"
 "Assets/Scripts/PlayGame.cs"
 "Assets/Scripts/SceneTransitionManager.cs"
 "Assets/Scripts/Setting.cs"

@@ -4,38 +4,30 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public int damagePerShot = 20; // Amount of damage dealt per shot
-    public float fireRate = 0.5f; // Rate of fire (shots per second)
-    public Transform shootingPoint; // Shooting point GameObject
-    public GameObject bulletPrefab; // Reference to the bullet prefab
-
-
-    private float nextFireTime; // Time of the next allowed shot
+    public Transform firePoint; // Transform of the point from where bullets will be fired
+    public GameObject bulletPrefab; // Prefab of the bullet object
+    public float bulletVelocity = 30f;
+    public float bulletPrefabLifetime = 3f;
 
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFireTime)
+        if (Input.GetMouseButtonDown(0))
         {
-            Shoot();
-            nextFireTime = Time.time + 1f / fireRate; // Update next allowed shot time
+            FireWeapon();
         }
     }
 
-
-
-    void Shoot()
+    private void FireWeapon()
     {
-        RaycastHit hit;
-         Debug.Log("Shoot method called.");
-        if (Physics.Raycast(shootingPoint.position, shootingPoint.forward, out hit))
-        {
-            // Check if the object hit by the raycast has an Enemy component
-            Enemy enemy = hit.transform.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(damagePerShot);
-            }
-        }
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+
+        bullet.GetComponent<Rigidbody>().AddForce(firePoint.forward.normalized * bulletVelocity, ForceMode.Impulse);
+        StartCoroutine(DestoryBulletAfterTime(bullet, bulletPrefabLifetime));
     }
 
+    private IEnumerator DestoryBulletAfterTime(GameObject bullet, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(bullet);
+    }
 }
