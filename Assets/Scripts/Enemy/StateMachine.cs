@@ -12,7 +12,7 @@ public class StateMachine : MonoBehaviour
         ChangeState(new PatrolState(enemy));
     }
 
-    void Update()
+    public void Update()
     {
         if (activeState != null)
         {

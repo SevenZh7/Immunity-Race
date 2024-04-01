@@ -16,10 +16,10 @@ public class Enemy : MonoBehaviour
     public int EnemyHP = 100;
     public NavMeshAgent Agent { get => agent; }
     public float sightDistance = 20f;
-    public float fieldofView = 85f;
-    public float eyeHeight;
+    public float fieldOfView = 85f;
     public string currentState;
     private bool isChasing = false;
+     public float eyeHeight;
 
 
     void Start()
@@ -34,57 +34,57 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void Update()
+        void Update()
     {
-        if (CanSeePlayer())
+        CanSeePlayer();
+        // Update state machine
+        if (stateMachine != null)
         {
-            StartChasing();
+            stateMachine.Update();
         }
-        else
-        {
-            StopChasing();
-        }
+    }
 
-        if (isChasing)
+    public void ChangeState(Basestate newState)
+    {
+        if (stateMachine != null)
         {
-            agent.SetDestination(player.transform.position);
+            stateMachine.ChangeState(newState);
         }
     }
 
     public bool CanSeePlayer()
     {
-     if (player != null)
-    {
-        Vector3 directionToPlayer = player.transform.position - transform.position;
-        float angleToPlayer = Vector3.Angle(transform.forward, directionToPlayer);
-
-        // Check if the player is within the field of view angle
-        if (angleToPlayer < fieldofView / 2f)
+        if (player != null)
         {
-            RaycastHit hit;
-            // Check if there's no obstacle between the enemy and the player
-            if (Physics.Raycast(transform.position, directionToPlayer, out hit, sightDistance))
+            Vector3 directionToPlayer = player.transform.position - transform.position;
+            float angleToPlayer = Vector3.Angle(transform.forward, directionToPlayer);
+            if (angleToPlayer >= -fieldOfView / 2f && angleToPlayer <= fieldOfView / 2f)
             {
-                if (hit.collider.CompareTag("Player"))
+                Ray ray = new Ray(transform.position + Vector3.up * eyeHeight, directionToPlayer);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, sightDistance))
                 {
-                    return true; // Player is within sight and field of view
+                    if (hit.collider.CompareTag("Player"))
+                    {
+                        ChangeState(new ChaseState(this));
+                        return true;
+                    }
                 }
             }
         }
-    }
-
+        ChangeState(new PatrolState(this));
         return false;
     }
 
-        private void OnCollisionEnter(Collision collision)
+
+        public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             AttackPlayer();
         }
     }
-
-    private void AttackPlayer()
+         void AttackPlayer()
     {
          PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
         if (playerHealth != null)
