@@ -9,8 +9,7 @@ public class StateMachine : MonoBehaviour
 
     public void Initialise(Enemy enemy)
     {
-        PatrolState patrolState = new PatrolState(enemy); // Pass the Enemy reference to the PatrolState constructor
-        ChangeState(patrolState);
+        ChangeState(new PatrolState(enemy));
     }
 
     void Update()

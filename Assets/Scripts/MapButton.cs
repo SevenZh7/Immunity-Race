@@ -8,6 +8,6 @@ public class MapthenWeapon : MonoBehaviour
     public void MapThenWeaponButton()
     {
         SceneManagerManager.Instance.SetPreviousSceneIndex();
-        SceneManager.LoadScene("MapTesting");
+        SceneManager.LoadScene("Testing2");
     }
 }
