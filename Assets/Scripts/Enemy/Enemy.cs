@@ -19,7 +19,6 @@ public class Enemy : MonoBehaviour
     public float fieldOfView = 85f;
     public string currentState;
     private bool isChasing = false;
-     public float eyeHeight;
 
 
     void Start()
@@ -60,7 +59,7 @@ public class Enemy : MonoBehaviour
             float angleToPlayer = Vector3.Angle(transform.forward, directionToPlayer);
             if (angleToPlayer >= -fieldOfView / 2f && angleToPlayer <= fieldOfView / 2f)
             {
-                Ray ray = new Ray(transform.position + Vector3.up * eyeHeight, directionToPlayer);
+                Ray ray = new Ray(transform.position, directionToPlayer);
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit, sightDistance))
                 {

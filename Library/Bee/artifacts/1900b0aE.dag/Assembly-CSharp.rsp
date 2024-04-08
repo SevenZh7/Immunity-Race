@@ -369,6 +369,7 @@
 "Assets/Scripts/Enemy/Path.cs"
 "Assets/Scripts/Enemy/PatrolState.cs"
 "Assets/Scripts/Enemy/StateMachine.cs"
+"Assets/Scripts/Enemy/Zombie.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/InputManager.cs"
 "Assets/Scripts/Interactable.cs"
