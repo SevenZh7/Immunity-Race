@@ -7,18 +7,25 @@ public class Zombie : MonoBehaviour
     [SerializeField] private int HP = 100;
     private Animator animator;
     private UnityEngine.AI.NavMeshAgent navAgent;
+    private GameManager gameManager;
+    private bool isDead = false;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     public void TakeDamage(int damageAmount)
     {
+        if (isDead) // If the zombie is already dead, exit the method
+            return;
+
         HP -= damageAmount;
         if (HP <= 0)
         {
+            isDead = true;
             int randomValue = Random.Range(0, 2);
 
             if (randomValue == 0)
@@ -29,22 +36,21 @@ public class Zombie : MonoBehaviour
             {
                 animator.SetTrigger("DIE2");
             }
+
+            if (gameManager != null)
+            {
+                gameManager.ZombieKilled(); // Decrease the count of zombies when killed
+            }
+            StartCoroutine(DestroyAfterDelay(4.5f));
         }
         else
         {
             animator.SetTrigger("DAMAGE");
         }
     }
-
-    private void Update()
-    {
-        if (navAgent.velocity.magnitude > 0.1f)
+    private IEnumerator DestroyAfterDelay(float delay)
         {
-            animator.SetBool("isWalking", true);
+            yield return new WaitForSeconds(delay);
+            Destroy(gameObject); // Destroy the zombie GameObject
         }
-        else
-        {
-            animator.SetBool("isWalking", false);
-        }
-    }
 }
