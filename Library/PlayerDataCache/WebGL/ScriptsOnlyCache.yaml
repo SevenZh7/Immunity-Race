@@ -44,10 +44,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -157,15 +155,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 5434}
+      Script: {instanceID: 4350}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6582}
+      Script: {instanceID: 6230}
     - Class: 114
-      Script: {instanceID: 8632}
+      Script: {instanceID: 6588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -212,15 +210,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 5434}
+      Script: {instanceID: 4350}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6582}
+      Script: {instanceID: 6230}
     - Class: 114
-      Script: {instanceID: 8632}
+      Script: {instanceID: 6588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -273,19 +271,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 4382}
+      Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 4660}
+      Script: {instanceID: 4662}
     - Class: 114
-      Script: {instanceID: 5434}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6230}
     - Class: 114
-      Script: {instanceID: 6582}
+      Script: {instanceID: 6588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -336,17 +334,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 5434}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6230}
     - Class: 114
-      Script: {instanceID: 6582}
+      Script: {instanceID: 6588}
     - Class: 114
-      Script: {instanceID: 7482}
+      Script: {instanceID: 7488}
     - Class: 114
-      Script: {instanceID: 7532}
+      Script: {instanceID: 7538}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -395,11 +393,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5786}
+      Script: {instanceID: 5788}
     - Class: 114
-      Script: {instanceID: 7128}
+      Script: {instanceID: 7134}
     - Class: 114
-      Script: {instanceID: 96326}
+      Script: {instanceID: 39794}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -442,15 +440,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 5434}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6230}
     - Class: 114
-      Script: {instanceID: 6582}
+      Script: {instanceID: 6588}
     - Class: 114
-      Script: {instanceID: 7532}
+      Script: {instanceID: 7538}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -525,33 +523,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3934}
     - Class: 114
-      Script: {instanceID: 4574}
+      Script: {instanceID: 4576}
     - Class: 114
-      Script: {instanceID: 4874}
+      Script: {instanceID: 4876}
     - Class: 114
-      Script: {instanceID: 5434}
+      Script: {instanceID: 5436}
     - Class: 114
-      Script: {instanceID: 5786}
+      Script: {instanceID: 5788}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 5816}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6994}
+      Script: {instanceID: 6230}
     - Class: 114
-      Script: {instanceID: 7128}
+      Script: {instanceID: 6402}
     - Class: 114
-      Script: {instanceID: 7366}
+      Script: {instanceID: 7000}
     - Class: 114
-      Script: {instanceID: 7754}
+      Script: {instanceID: 7134}
     - Class: 114
-      Script: {instanceID: 7812}
+      Script: {instanceID: 7372}
     - Class: 114
-      Script: {instanceID: 8636}
+      Script: {instanceID: 7760}
     - Class: 114
-      Script: {instanceID: 8640}
+      Script: {instanceID: 7818}
     - Class: 114
-      Script: {instanceID: 32254}
+      Script: {instanceID: 8024}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1057,6 +1055,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Restart
+  - hash:
+      serializedVersion: 2
       Hash: 2b006c27b595e55e112de0e713333574
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1309,6 +1313,12 @@ ScriptsOnlyBuild:
     className: InputManager
   - hash:
       serializedVersion: 2
+      Hash: 085e5b309c4dc7ee64f0f35388a0553d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 654cebef8aa88cb6cd0504505364d614
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1355,6 +1365,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 0abdb569d1298f22918296fb39a5c935
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ZombieChaseState
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1639,6 +1655,12 @@ ScriptsOnlyBuild:
     className: MultiplayerEventSystem
   - hash:
       serializedVersion: 2
+      Hash: ef21275a866ae8ad26e59e5b23f2c64b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ZombiePatrolingState
+  - hash:
+      serializedVersion: 2
       Hash: beb698d8e69a08f4889b130207e49d71
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.XR
@@ -1727,30 +1749,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Restart
-  - hash:
-      serializedVersion: 2
-      Hash: 0abdb569d1298f22918296fb39a5c935
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ZombieChaseState
-  - hash:
-      serializedVersion: 2
-      Hash: ef21275a866ae8ad26e59e5b23f2c64b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ZombiePatrolingState
-  - hash:
-      serializedVersion: 2
-      Hash: 085e5b309c4dc7ee64f0f35388a0553d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameManager
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
