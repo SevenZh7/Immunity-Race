@@ -454,13 +454,7 @@
         446,
         447,
         448,
-        449,
-        450,
-        451,
-        452,
-        453,
-        454,
-        455
+        449
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -20393,116 +20387,34 @@
       "DebugActionIndex": 427
     },
     {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
-      "DisplayName": "7z build.framework.js",
-      "Action": "cd \"C:/Users/19096/Immunity Race/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/7z.exe\" a -tgzip \"C:/Users/19096/Immunity Race/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked\" \"build.framework.js\"",
+      "Annotation": "CopyFiles docs/Build/docs.framework.js",
+      "DisplayName": "Copying docs.framework.js",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/7z.exe"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js"
       ],
       "Outputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked"
+        "docs/Build/docs.framework.js"
       ],
       "ToBuildDependencies": [
         427
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
       "DebugActionIndex": 428
     },
     {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/docs.framework.js.gz_84z6.info",
-      "DisplayName": "Writing docs.framework.js.gz_84z6.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 165753,
-      "PayloadLength": 441,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/docs.framework.js.gz_84z6.info"
-      ],
-      "DebugActionIndex": 429
-    },
-    {
-      "Annotation": "GzipMarker docs/Build/docs.framework.js.gz",
-      "DisplayName": "GzipMarker docs.framework.js",
-      "Action": "\"C:\\Program Files\\Unity 2022.3.8f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity 2022.3.8f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\docs.framework.js.gz_84z6.info\"",
+      "Annotation": "CopyFiles docs/Build/docs.wasm",
+      "DisplayName": "Copying docs.wasm",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
-        "Library/Bee/artifacts/csharpactions/docs.framework.js.gz_84z6.info",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm"
       ],
       "Outputs": [
-        "docs/Build/docs.framework.js.gz"
-      ],
-      "ToBuildDependencies": [
-        428,
-        429
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 430
-    },
-    {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
-      "DisplayName": "7z build.wasm",
-      "Action": "cd \"C:/Users/19096/Immunity Race/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/7z.exe\" a -tgzip \"C:/Users/19096/Immunity Race/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked\" \"build.wasm\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/7z.exe"
-      ],
-      "Outputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked"
+        "docs/Build/docs.wasm"
       ],
       "ToBuildDependencies": [
         425
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 431
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/docs.wasm.gz_992u.info",
-      "DisplayName": "Writing docs.wasm.gz_992u.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 166284,
-      "PayloadLength": 425,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/docs.wasm.gz_992u.info"
-      ],
-      "DebugActionIndex": 432
-    },
-    {
-      "Annotation": "GzipMarker docs/Build/docs.wasm.gz",
-      "DisplayName": "GzipMarker docs.wasm",
-      "Action": "\"C:\\Program Files\\Unity 2022.3.8f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity 2022.3.8f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\docs.wasm.gz_992u.info\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
-        "Library/Bee/artifacts/csharpactions/docs.wasm.gz_992u.info",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
-      ],
-      "Outputs": [
-        "docs/Build/docs.wasm.gz"
-      ],
-      "ToBuildDependencies": [
-        431,
-        432
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 433
+      "DebugActionIndex": 429
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/UnityLinkerToEditorData.json",
@@ -20517,7 +20429,7 @@
       "ToBuildDependencies": [
         4
       ],
-      "DebugActionIndex": 434
+      "DebugActionIndex": 430
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/MethodMap.tsv",
@@ -20532,20 +20444,20 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 435
+      "DebugActionIndex": 431
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info",
       "DisplayName": "Writing webgl.data_qnm2.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 166797,
+      "PayloadOffset": 165743,
       "PayloadLength": 1807,
       "PayloadDebugContentSnippet": "{\"System.Collections.Generic.D",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info"
       ],
-      "DebugActionIndex": 436
+      "DebugActionIndex": 432
     },
     {
       "Annotation": "Assemble WebGL Data Library/Bee/artifacts/WebGL/webgl.data",
@@ -20571,73 +20483,32 @@
       "ToBuildDependencies": [
         2,
         5,
-        436
+        432
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 437
+      "DebugActionIndex": 433
     },
     {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/webgl.data.unmarked",
-      "DisplayName": "7z webgl.data",
-      "Action": "cd \"C:/Users/19096/Immunity Race/Library/Bee/artifacts/WebGL\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/7z.exe\" a -tgzip \"C:/Users/19096/Immunity Race/Library/Bee/artifacts/WebGL/webgl.data.unmarked\" \"webgl.data\"",
+      "Annotation": "CopyFiles docs/Build/docs.data",
+      "DisplayName": "Copying docs.data",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/7z.exe"
+        "Library/Bee/artifacts/WebGL/webgl.data"
       ],
       "Outputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data.unmarked"
+        "docs/Build/docs.data"
       ],
       "ToBuildDependencies": [
-        437
+        433
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 438
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/docs.data.gz_r4o7.info",
-      "DisplayName": "Writing docs.data.gz_r4o7.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 168694,
-      "PayloadLength": 402,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/docs.data.gz_r4o7.info"
-      ],
-      "DebugActionIndex": 439
-    },
-    {
-      "Annotation": "GzipMarker docs/Build/docs.data.gz",
-      "DisplayName": "GzipMarker docs.data",
-      "Action": "\"C:\\Program Files\\Unity 2022.3.8f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity 2022.3.8f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity 2022.3.8f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\docs.data.gz_r4o7.info\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data.unmarked",
-        "Library/Bee/artifacts/csharpactions/docs.data.gz_r4o7.info",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
-      ],
-      "Outputs": [
-        "docs/Build/docs.data.gz"
-      ],
-      "ToBuildDependencies": [
-        438,
-        439
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 440
+      "DebugActionIndex": 434
     },
     {
       "Annotation": "PreprocessJS docs/Build/docs.loader.js",
       "DisplayName": "PreprocessJS docs.loader",
-      "Action": "cd /d \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='C\\x3a/Users/19096/Immunity Race/docs/Build/docs.loader.js'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='Immunity Race'\" \"PRODUCT_NAME='Immunity Race'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1920\" \"HEIGHT=1080\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data.gz'\" \"FRAMEWORK_FILENAME='docs.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.8f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='docs.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='C\\x3a/Users/19096/Immunity Race/docs/Build/docs.loader.js'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='Immunity Race'\" \"PRODUCT_NAME='Immunity Race'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1920\" \"HEIGHT=1080\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.8f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='docs.loader.js'\"",
       "Inputs": [
         "UnityLoader/UnityLoader.js"
       ],
@@ -20646,12 +20517,12 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 441
+      "DebugActionIndex": 435
     },
     {
       "Annotation": "PreprocessJS docs/index.html",
       "DisplayName": "PreprocessJS index",
-      "Action": "cd /d \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='C\\x3a/Users/19096/Immunity Race/docs/index.html'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='Immunity Race'\" \"PRODUCT_NAME='Immunity Race'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1920\" \"HEIGHT=1080\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data.gz'\" \"FRAMEWORK_FILENAME='docs.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.8f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='docs.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='C\\x3a/Users/19096/Immunity Race/docs/index.html'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='Immunity Race'\" \"PRODUCT_NAME='Immunity Race'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1920\" \"HEIGHT=1080\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.8f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='docs.loader.js'\"",
       "Inputs": [
         "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
       ],
@@ -20660,7 +20531,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 442
+      "DebugActionIndex": 436
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/favicon.ico",
@@ -20672,7 +20543,7 @@
       "Outputs": [
         "docs/TemplateData/favicon.ico"
       ],
-      "DebugActionIndex": 443
+      "DebugActionIndex": 437
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/fullscreen-button.png",
@@ -20684,7 +20555,7 @@
       "Outputs": [
         "docs/TemplateData/fullscreen-button.png"
       ],
-      "DebugActionIndex": 444
+      "DebugActionIndex": 438
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/MemoryProfiler.png",
@@ -20696,7 +20567,7 @@
       "Outputs": [
         "docs/TemplateData/MemoryProfiler.png"
       ],
-      "DebugActionIndex": 445
+      "DebugActionIndex": 439
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/progress-bar-empty-dark.png",
@@ -20708,7 +20579,7 @@
       "Outputs": [
         "docs/TemplateData/progress-bar-empty-dark.png"
       ],
-      "DebugActionIndex": 446
+      "DebugActionIndex": 440
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/progress-bar-empty-light.png",
@@ -20720,7 +20591,7 @@
       "Outputs": [
         "docs/TemplateData/progress-bar-empty-light.png"
       ],
-      "DebugActionIndex": 447
+      "DebugActionIndex": 441
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/progress-bar-full-dark.png",
@@ -20732,7 +20603,7 @@
       "Outputs": [
         "docs/TemplateData/progress-bar-full-dark.png"
       ],
-      "DebugActionIndex": 448
+      "DebugActionIndex": 442
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/progress-bar-full-light.png",
@@ -20744,12 +20615,12 @@
       "Outputs": [
         "docs/TemplateData/progress-bar-full-light.png"
       ],
-      "DebugActionIndex": 449
+      "DebugActionIndex": 443
     },
     {
       "Annotation": "PreprocessJS docs/TemplateData/style.css",
       "DisplayName": "PreprocessJS style",
-      "Action": "cd /d \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='C\\x3a/Users/19096/Immunity Race/docs/TemplateData/style.css'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='Immunity Race'\" \"PRODUCT_NAME='Immunity Race'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1920\" \"HEIGHT=1080\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data.gz'\" \"FRAMEWORK_FILENAME='docs.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.8f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='docs.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='C\\x3a/Users/19096/Immunity Race/docs/TemplateData/style.css'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='Immunity Race'\" \"PRODUCT_NAME='Immunity Race'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1920\" \"HEIGHT=1080\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.8f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='docs.loader.js'\"",
       "Inputs": [
         "C:/Program Files/Unity 2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
       ],
@@ -20758,7 +20629,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 450
+      "DebugActionIndex": 444
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/unity-logo-dark.png",
@@ -20770,7 +20641,7 @@
       "Outputs": [
         "docs/TemplateData/unity-logo-dark.png"
       ],
-      "DebugActionIndex": 451
+      "DebugActionIndex": 445
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/unity-logo-light.png",
@@ -20782,7 +20653,7 @@
       "Outputs": [
         "docs/TemplateData/unity-logo-light.png"
       ],
-      "DebugActionIndex": 452
+      "DebugActionIndex": 446
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/webgl-logo.png",
@@ -20794,7 +20665,7 @@
       "Outputs": [
         "docs/TemplateData/webgl-logo.png"
       ],
-      "DebugActionIndex": 453
+      "DebugActionIndex": 447
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/webmemd-icon.png",
@@ -20806,7 +20677,7 @@
       "Outputs": [
         "docs/TemplateData/webmemd-icon.png"
       ],
-      "DebugActionIndex": 454
+      "DebugActionIndex": 448
     },
     {
       "Annotation": "Player",
@@ -20816,10 +20687,16 @@
       "ToBuildDependencies": [
         4,
         421,
+        428,
+        429,
         430,
-        433,
+        431,
         434,
         435,
+        436,
+        437,
+        438,
+        439,
         440,
         441,
         442,
@@ -20828,16 +20705,10 @@
         445,
         446,
         447,
-        448,
-        449,
-        450,
-        451,
-        452,
-        453,
-        454
+        448
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 455
+      "DebugActionIndex": 449
     }
   ],
   "FileSignatures": [
@@ -21205,7 +21076,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 455
+          "Player": 449
         }
 ,  "DefaultNodes": [
     0
