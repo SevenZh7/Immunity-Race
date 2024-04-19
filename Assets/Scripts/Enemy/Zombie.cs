@@ -41,11 +41,13 @@ public class Zombie : MonoBehaviour
             {
                 gameManager.ZombieKilled(); // Decrease the count of zombies when killed
             }
+            SoundManager.Instance.zombieChannel2.PlayOneShot(SoundManager.Instance.zombieDeath);
             StartCoroutine(DestroyAfterDelay(4.5f));
         }
         else
         {
             animator.SetTrigger("DAMAGE");
+            SoundManager.Instance.zombieChannel2.PlayOneShot(SoundManager.Instance.zombieHurt);
         }
     }
     private IEnumerator DestroyAfterDelay(float delay)

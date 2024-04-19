@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         UpdateCountdownUI();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void ZombieKilled()

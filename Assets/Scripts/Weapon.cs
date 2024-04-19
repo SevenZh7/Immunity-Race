@@ -9,6 +9,8 @@ public class Weapon : MonoBehaviour
     public float bulletVelocity = 30f;
     public float bulletPrefabLifetime = 3f;
 
+    public GameObject muzzleEffect;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -18,7 +20,12 @@ public class Weapon : MonoBehaviour
     }
 
     private void FireWeapon()
-    {
+    {   
+
+        muzzleEffect.GetComponent<ParticleSystem>().Play();
+
+        SoundManager.Instance.shootingSound.Play();
+
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
 
         bullet.GetComponent<Rigidbody>().AddForce(firePoint.forward.normalized * bulletVelocity, ForceMode.Impulse);

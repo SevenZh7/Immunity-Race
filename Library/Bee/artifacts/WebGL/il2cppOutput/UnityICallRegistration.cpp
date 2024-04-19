@@ -216,6 +216,34 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.AsyncOperation
 
+	//Start Registrations for type : UnityEngine.AudioSource
+
+		//System.Boolean UnityEngine.AudioSource::get_isPlaying()
+		void Register_UnityEngine_AudioSource_get_isPlaying();
+		Register_UnityEngine_AudioSource_get_isPlaying();
+
+		//System.Void UnityEngine.AudioSource::Play(System.Double)
+		void Register_UnityEngine_AudioSource_Play();
+		Register_UnityEngine_AudioSource_Play();
+
+		//System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
+		void Register_UnityEngine_AudioSource_PlayHelper();
+		Register_UnityEngine_AudioSource_PlayHelper();
+
+		//System.Void UnityEngine.AudioSource::PlayOneShotHelper(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)
+		void Register_UnityEngine_AudioSource_PlayOneShotHelper();
+		Register_UnityEngine_AudioSource_PlayOneShotHelper();
+
+		//System.Void UnityEngine.AudioSource::Stop(System.Boolean)
+		void Register_UnityEngine_AudioSource_Stop();
+		Register_UnityEngine_AudioSource_Stop();
+
+		//System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
+		void Register_UnityEngine_AudioSource_set_clip();
+		Register_UnityEngine_AudioSource_set_clip();
+
+	//End Registrations for type : UnityEngine.AudioSource
+
 	//Start Registrations for type : UnityEngine.Behaviour
 
 		//System.Boolean UnityEngine.Behaviour::get_enabled()
@@ -277,6 +305,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Camera::ScreenToViewportPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Camera_ScreenToViewportPoint_Injected();
 		Register_UnityEngine_Camera_ScreenToViewportPoint_Injected();
+
+		//System.Void UnityEngine.Camera::ScreenToWorldPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
+		void Register_UnityEngine_Camera_ScreenToWorldPoint_Injected();
+		Register_UnityEngine_Camera_ScreenToWorldPoint_Injected();
 
 		//System.Void UnityEngine.Camera::SetupCurrent(UnityEngine.Camera)
 		void Register_UnityEngine_Camera_SetupCurrent();
@@ -564,6 +596,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.CharacterController
 
+	//Start Registrations for type : UnityEngine.Collider
+
+		//UnityEngine.PhysicMaterial UnityEngine.Collider::get_sharedMaterial()
+		void Register_UnityEngine_Collider_get_sharedMaterial();
+		Register_UnityEngine_Collider_get_sharedMaterial();
+
+	//End Registrations for type : UnityEngine.Collider
+
 	//Start Registrations for type : UnityEngine.Component
 
 		//System.Void UnityEngine.Component::BroadcastMessage(System.String,System.Object,UnityEngine.SendMessageOptions)
@@ -649,6 +689,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Cursor::SetCursor_Injected(UnityEngine.Texture2D,UnityEngine.Vector2&,UnityEngine.CursorMode)
 		void Register_UnityEngine_Cursor_SetCursor_Injected();
 		Register_UnityEngine_Cursor_SetCursor_Injected();
+
+		//System.Void UnityEngine.Cursor::set_lockState(UnityEngine.CursorLockMode)
+		void Register_UnityEngine_Cursor_set_lockState();
+		Register_UnityEngine_Cursor_set_lockState();
 
 		//UnityEngine.CursorLockMode UnityEngine.Cursor::get_lockState()
 		void Register_UnityEngine_Cursor_get_lockState();
@@ -1944,6 +1988,66 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.ObjectGUIState
 
+	//Start Registrations for type : UnityEngine.ParticleCollisionEvent
+
+		//UnityEngine.Component UnityEngine.ParticleCollisionEvent::InstanceIDToColliderComponent(System.Int32)
+		void Register_UnityEngine_ParticleCollisionEvent_InstanceIDToColliderComponent();
+		Register_UnityEngine_ParticleCollisionEvent_InstanceIDToColliderComponent();
+
+	//End Registrations for type : UnityEngine.ParticleCollisionEvent
+
+	//Start Registrations for type : UnityEngine.ParticleSystem
+
+		//System.Void UnityEngine.ParticleSystem::EmitOld_Internal(UnityEngine.ParticleSystem/Particle&)
+		void Register_UnityEngine_ParticleSystem_EmitOld_Internal();
+		Register_UnityEngine_ParticleSystem_EmitOld_Internal();
+
+		//System.Void UnityEngine.ParticleSystem::Emit_Injected(UnityEngine.ParticleSystem/EmitParams&,System.Int32)
+		void Register_UnityEngine_ParticleSystem_Emit_Injected();
+		Register_UnityEngine_ParticleSystem_Emit_Injected();
+
+		//System.Void UnityEngine.ParticleSystem::Emit_Internal(System.Int32)
+		void Register_UnityEngine_ParticleSystem_Emit_Internal();
+		Register_UnityEngine_ParticleSystem_Emit_Internal();
+
+		//System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
+		void Register_UnityEngine_ParticleSystem_Play();
+		Register_UnityEngine_ParticleSystem_Play();
+
+		//System.Void UnityEngine.ParticleSystem::Stop(System.Boolean,UnityEngine.ParticleSystemStopBehavior)
+		void Register_UnityEngine_ParticleSystem_Stop();
+		Register_UnityEngine_ParticleSystem_Stop();
+
+		//System.Void UnityEngine.ParticleSystem::set_time(System.Single)
+		void Register_UnityEngine_ParticleSystem_set_time();
+		Register_UnityEngine_ParticleSystem_set_time();
+
+	//End Registrations for type : UnityEngine.ParticleSystem
+
+	//Start Registrations for type : UnityEngine.ParticleSystemExtensionsImpl
+
+		//System.Int32 UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>)
+		void Register_UnityEngine_ParticleSystemExtensionsImpl_GetCollisionEvents();
+		Register_UnityEngine_ParticleSystemExtensionsImpl_GetCollisionEvents();
+
+	//End Registrations for type : UnityEngine.ParticleSystemExtensionsImpl
+
+	//Start Registrations for type : UnityEngine.ParticleSystemRenderer
+
+		//System.Int32 UnityEngine.ParticleSystemRenderer::GetMeshes(UnityEngine.Mesh[])
+		void Register_UnityEngine_ParticleSystemRenderer_GetMeshes();
+		Register_UnityEngine_ParticleSystemRenderer_GetMeshes();
+
+	//End Registrations for type : UnityEngine.ParticleSystemRenderer
+
+	//Start Registrations for type : UnityEngine.PhysicMaterial
+
+		//System.Void UnityEngine.PhysicMaterial::Internal_CreateDynamicsMaterial(UnityEngine.PhysicMaterial,System.String)
+		void Register_UnityEngine_PhysicMaterial_Internal_CreateDynamicsMaterial();
+		Register_UnityEngine_PhysicMaterial_Internal_CreateDynamicsMaterial();
+
+	//End Registrations for type : UnityEngine.PhysicMaterial
+
 	//Start Registrations for type : UnityEngine.Physics
 
 		//System.Boolean UnityEngine.Physics::get_invokeCollisionCallbacks()
@@ -2905,6 +3009,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_realtimeSinceStartup()
 		void Register_UnityEngine_Time_get_realtimeSinceStartup();
 		Register_UnityEngine_Time_get_realtimeSinceStartup();
+
+		//System.Single UnityEngine.Time::get_time()
+		void Register_UnityEngine_Time_get_time();
+		Register_UnityEngine_Time_get_time();
 
 		//System.Single UnityEngine.Time::get_unscaledDeltaTime()
 		void Register_UnityEngine_Time_get_unscaledDeltaTime();

@@ -25,6 +25,11 @@ public class ZombieChaseState : StateMachineBehaviour
        agent.SetDestination(player.position);
        animator.transform.LookAt(player);
 
+        if(SoundManager.Instance.zombieChannel.isPlaying == false)
+        {
+            SoundManager.Instance.zombieChannel.PlayOneShot(SoundManager.Instance.zombieChase);
+        }
+
        float distanceFromPlayer = Vector3.Distance(player.position, animator.transform.position);
 
        if (distanceFromPlayer > stopChasingDistance)
@@ -41,5 +46,7 @@ public class ZombieChaseState : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        agent.SetDestination(animator.transform.position);
+
+       SoundManager.Instance.zombieChannel.Stop();
     }
 }

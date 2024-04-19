@@ -41,6 +41,12 @@ UnityEngine.Application::get_runInBackground
 UnityEngine.Application::OpenURL
 UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::InternalDestroy
+UnityEngine.AudioSource::get_isPlaying
+UnityEngine.AudioSource::Play
+UnityEngine.AudioSource::PlayHelper
+UnityEngine.AudioSource::PlayOneShotHelper
+UnityEngine.AudioSource::Stop
+UnityEngine.AudioSource::set_clip
 UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
@@ -55,6 +61,7 @@ UnityEngine.Camera::get_farClipPlane
 UnityEngine.Camera::get_nearClipPlane
 UnityEngine.Camera::ScreenPointToRay_Injected
 UnityEngine.Camera::ScreenToViewportPoint_Injected
+UnityEngine.Camera::ScreenToWorldPoint_Injected
 UnityEngine.Camera::SetupCurrent
 UnityEngine.Camera::WorldToScreenPoint_Injected
 UnityEngine.Camera::get_pixelRect_Injected
@@ -121,6 +128,7 @@ UnityEngine.CanvasRenderer::set_popMaterialCount
 UnityEngine.CanvasRenderer::GetMaterial
 UnityEngine.CharacterController::get_isGrounded
 UnityEngine.CharacterController::Move_Injected
+UnityEngine.Collider::get_sharedMaterial
 UnityEngine.Component::BroadcastMessage
 UnityEngine.Component::GetComponentsForListInternal
 UnityEngine.Component::SendMessage
@@ -135,6 +143,7 @@ UnityEngine.Cubemap::get_isReadable
 UnityEngine.CubemapArray::Internal_CreateImpl
 UnityEngine.CubemapArray::get_isReadable
 UnityEngine.Cursor::SetCursor_Injected
+UnityEngine.Cursor::set_lockState
 UnityEngine.Cursor::get_lockState
 UnityEngine.Debug::ExtractStackTraceNoAlloc
 UnityEngine.Debug::DrawLine_Injected
@@ -423,6 +432,16 @@ UnityEngine.Object::Internal_InstantiateSingle_Injected
 UnityEngine.Object::FindObjectsOfType
 UnityEngine.ObjectGUIState::Internal_Create
 UnityEngine.ObjectGUIState::Internal_Destroy
+UnityEngine.ParticleCollisionEvent::InstanceIDToColliderComponent
+UnityEngine.ParticleSystem::EmitOld_Internal
+UnityEngine.ParticleSystem::Emit_Injected
+UnityEngine.ParticleSystem::Emit_Internal
+UnityEngine.ParticleSystem::Play
+UnityEngine.ParticleSystem::Stop
+UnityEngine.ParticleSystem::set_time
+UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents
+UnityEngine.ParticleSystemRenderer::GetMeshes
+UnityEngine.PhysicMaterial::Internal_CreateDynamicsMaterial
 UnityEngine.Physics::get_invokeCollisionCallbacks
 UnityEngine.Physics::get_reuseCollisionCallbacks
 UnityEngine.Physics::SendOnCollisionEnter
@@ -621,6 +640,7 @@ UnityEngine.Texture3D::get_isReadable
 UnityEngine.Time::get_deltaTime
 UnityEngine.Time::get_fixedUnscaledTime
 UnityEngine.Time::get_realtimeSinceStartup
+UnityEngine.Time::get_time
 UnityEngine.Time::get_unscaledDeltaTime
 UnityEngine.Time::get_unscaledTime
 UnityEngine.TouchScreenKeyboard::IsInPlaceEditingAllowed

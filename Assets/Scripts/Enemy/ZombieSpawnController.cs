@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class ZombieSpawnController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int initialZombiesPerWave = 5;
+    public int currentZombiesPerWave;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float SpawnDelay;
 }
